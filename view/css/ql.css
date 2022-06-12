@@ -1,0 +1,244 @@
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+
+#header {
+    width: 100%;
+    height: 130px;
+    margin-bottom: 100px;
+}
+
+#header .topheader{
+    width: 100%;
+    height: 67px;
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+}
+
+#header .topheader .logo{
+    height: 65px;
+    float: left;
+    width: 100px;
+    
+
+}
+
+#header .topheader .logo a{
+    padding-left: 120px;
+    font-size: 57px;
+    font-weight: normal;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    height:65px;
+    line-height: 65px;
+   
+
+}
+
+
+#header .topheader .list {
+    height: 65px;
+    float: left;
+    width: auto;
+}
+
+#header .topheader .list ul{
+    margin-left: 330px;
+    float: left;
+    height: 65px;
+
+}
+
+#header .topheader .list ul li{
+    display: inline-block;
+    height: 65px;
+    line-height: 65px;
+    margin: 0px 18px;
+}
+
+#header .topheader .list ul li a{
+    font-weight: 40px;
+    color:black;
+    text-align: center;
+}
+
+#header .topheader .list ul li a:hover{
+    border-bottom: 1px solid black;
+}
+
+#content {
+    width: 1500px;
+    margin: 0px auto;
+}
+
+#content .timkiem {
+    float: right;
+    margin-bottom: 40px;
+    
+}
+#content .timkiem input{
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+#content .text {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#content .text h2{
+    font-weight: bold;
+    font-size: 35px;
+    
+}
+
+#content .giohang table {
+    width: 100%;
+    
+    border-collapse: collapse;
+   
+
+   
+}
+
+#content .giohang table tr{
+    height: auto;
+    
+}
+
+
+
+#content .giohang table tr td{
+    border: 1px solid #dddddd;
+    padding: 8px;
+   
+    text-align: center;
+}
+#content .giohang table img {
+    width: 100%;
+    height: auto;
+}
+
+#content a{
+    text-decoration: none;
+    color: black;
+}
+
+#content a:hover {
+    color: lightcoral;
+}
+
+
+
+/*---------------------------*/
+
+
+#content .dathang {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#content .dathang h2{
+    font-weight: bold;
+    font-size: 26px;
+    margin: 30px;
+}
+
+#content .dathang button {
+    width: 400px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid white;
+    margin-top: 60px;
+
+}
+
+#content .dathang button:hover{
+    background-color: lightcoral;
+}
+
+#content .btn {
+    margin-top: 100px;
+    width:200px;
+}
+
+#content .btn a{
+  
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 1em;
+    width: 100%;
+    text-align: center;
+  
+
+}
+
+#content .btn a:hover{
+    background-color: lightcoral;
+    color:black;
+}
+
+.giohang button{
+    background-color: white;
+    border: 1px solid white;
+
+}
+/*==========================*/
+#footer{ 
+    margin-top: 300px;
+    width: 100%;
+    height: 200px;
+    background-color: #161616;
+
+}
+
+#footer .ft{
+    padding-left: 100px;
+    padding-top: 50px;
+    text-align: left;
+}
+
+#footer .ft span{
+    color: #a0855b;
+}
+
+
+

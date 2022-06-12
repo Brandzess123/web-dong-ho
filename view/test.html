@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loop Checkbox Value in jQuery</title>
+
+	<style type="text/css">
+		.result-wrapper {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label>What animals you have at home?</label>
+
+		<div>
+			<input type="checkbox" name="animals" class="animals" value="Dog"> Dog
+		</div>
+		<div>
+			<input type="checkbox" name="animals" class="animals" value="Cat"> Cat
+		</div>
+		<div>
+			<input type="checkbox" name="animals" class="animals" value="Pig"> Pig
+		</div>
+		<br/>
+		<button type="button" id="submit">Submit</button>
+	</form>
+
+	<div class="result-wrapper">
+		<h3>Result:</h3>
+		<div id="result"></div>
+	</div>
+
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  
+    $(document).ready(function() {  
+
+  		$("#submit").on("click", function() {
+  			// define the checkbox using name="animals"
+  			// note: you can do it with class also like this $('.animals')
+  			var animals = $('[name="animals"]');
+
+  			// define html variable to store the result
+  			var html = "<ul>";
+
+	  		$.each(animals, function() {
+	  			var $this = $(this);
+
+	  			// check if the checkbox is checked
+	  			if($this.is(":checked")) {
+	  				// put the checked animal value to the html list
+	  				html += "<li>"+$this.val()+"</li>";
+	  			}
+	  		});	
+	  		html += "</ul>";
+
+	  		// put the result in #result element
+	  		$(".result-wrapper #result").html(html);
+
+	  		// show the result-wrapper class element
+	  		$(".result-wrapper").show();
+  		});
+
+  		
+  	});
+  </script>
+</body>
+</html>
